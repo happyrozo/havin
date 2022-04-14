@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="havin.css">
+        <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+        <script type="text/javascript" src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <style>
+            #poultry-goods{
+                width: 100%;
+                height: 600px;
+                background-color: white;
+            }
+
+            #pltry-footer-logo{
+                position: absolute;
+                top: 150%;
+                left: 40%;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="home-dashboard">
+            <img id="brand-logo" src="gallery/havin-logo.png" alt="Brand logo"/>
+            <a id="brand-logo-link" href="index.html">Havin</a>
+
+            <div id="hm-prod-blg-div">
+                <label id="hm-label">Home<span class="material-icons dwn">arrow_drop_down</span></label>
+                <div id="hm-label-hover">
+                    <a href="index.html#mission">Mission</a>
+                    <a href="index.html#prod-review-cont">Products</a>
+                    <a href="index.html#member">Membership</a>
+                </div>
+
+                <label id="prod-label">Products<span class="material-icons dwn">arrow_drop_down</span></label>
+                <div id="prod-label-hover">
+                    <a href="poultry.html"> Poultry</a>
+                    <a href="vegetables.html"> Vegetables</a>
+                </div>
+
+                <a id="blog-link" href="blog.html">Blog</a>
+            </div>
+
+            <div id="sign-reg-cart-div">
+                <button id="sign-button">Login </button> 
+
+                <!--SIGN IN FORM --> 
+                <form id="sign-form" action="sign.java" method="post">
+                    <img class="brand-logo-form" src="gallery/havin-logo.png" alt="Brand logo"/>
+                    <span  class="material-icons close" style="position: absolute; left: 90%; font-size:30px; ">close</span>
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="pwd" placeholder="Password">
+                    <input type="submit" value="Login">
+                    <div id="sign-note">
+                        <small>Do not have account?</small>
+                        <label id="form-reg-label">Register</label>
+                    </div>
+                </form>
+
+                <button id="reg-button">Register</button>
+
+                <!--REGISTRATION FORM -->
+                <form id="reg-form" action="reg.java" method="post">
+                    <img class="brand-logo-form" style="height: 320px;" src="gallery/havin-logo.png" alt="Brand logo"/>
+                    <span  class="material-icons close" style="position: absolute; left: 90%; font-size:30px; ">close</span>
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="text" name="pwd" placeholder="Password">
+                    <input type="text" name="rpwd" placeholder="Retype password">
+                    <input type="submit" value="Register">
+                    <div id="reg-note">
+                        <small>Registered ?</small>
+                        <label id="form-lgn-label">Login</label>
+                    </div>
+                </form>
+
+                <a id="cart-link" href="">
+                    <img id="img-cart" style="position:absolute; top: -7px; left: 80%; height: 40px;" src="gallery/icons8-cart-64.png" alt="alt"/>
+                </a>
+            </div>  
+        </div>
+
+        <div id="poultry-goods">
+            STAY TUNED PRODUTS WILL BE POSTED SOON!!!
+        </div>
+
+        <div id="home-footer">
+            <div class="footer-child">
+                <h3 class="footer-head">About Havin</h3>
+                <a class="footer-link" href="" >Our mission</a>
+                <a class="footer-link" href="" >Privacy policy</a>
+                <a class="footer-link" href="" >Contact us</a>
+                <a class="footer-link" href="" >Terms and condition</a>
+            </div>
+            <div class="footer-child">
+                <h3 class="footer-head">Connect with Havin</h3>
+                <a class="footer-link" href="" >
+
+                    <img style="margin-right: 1rem" src="gallery/icons8-facebook.svg" alt="alt"/>Facebook</a>
+                <a class="footer-link" href="" >
+                    <img style="margin-right: 1rem" src="gallery/icons8-twitter.svg" alt="alt"/>Twitter</a>
+                <a class="footer-link" href="" >
+                    <img style="margin-right: 1rem" src="gallery/icons8-instagram.svg" alt="alt"/>Instagram</a>
+                <a class="footer-link" href="" >
+                    <img style="margin-right: 1rem" src="gallery/icons8-youtube.svg" alt="alt"/>Youtube</a>
+
+            </div>
+            <div class="footer-child">
+                <h3 class="footer-head">Havin services</h3>
+                <a class="footer-link" href="" >Buy product</a>
+                <a class="footer-link" href="" >Sell product</a>
+                <a class="footer-link" href="" >Advertise with us</a>
+                <a class="footer-link" href="" >Be our member</a>
+            </div>
+
+        </div>
+        <div id="pltry-footer-logo">
+            <img src="gallery/havin-logo.png" alt="alt" width=200px; height=200px; />
+            <label style="color:darkorange; font-weight: bold; font-size: 20px;">Havin Inc.</label>
+        </div>
+        <div id="copyright">
+            <p>Copyright &copy; 2022 havin.com. All right Reserved</p>
+        </div>
+
+        <script type="text/javascript" src="havin.js"></script>
+    </body>
+</html>
